@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header + Navigation */
+
+header {
+    background-color: black;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Navigation Logo */
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0 2rem;
+}
+
+/* Navigation Links mit Dropdown */
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #f2f2f2;
+    text-decoration: underline;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    position: relative;
+    margin-right: 20px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    position: relative;
+    margin-right: 20px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    display: none;
+    list-style-type: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-links li:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    margin-bottom: 5px;
+}
+
+.dropdown-menu a {
+    color: white;
+    font-size: 1rem;
+    padding-top: 1rem;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    text-decoration: underline;
+}
+
+
+/* Suchleiste */
+
+.search {
+    display: flex;
+    padding: 0 2rem;
+}
+
+.search input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+.search button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: #f2f2f2;
+}
+
+/* main container */
+
+.container {
+    width: 80%;
+    padding-top: 100px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex: 1 0 calc(33.33% - 20px);
+    margin: 10px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+
+}
+
+.box p {
+    margin-top: 5px;
+}
+
+.box:hover img {
+    transform: scale(1.2);
+}
