@@ -1,0 +1,402 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+header {
+    background-color: black;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Navigation Logo */
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0 2rem;
+    height: 100px;
+}
+
+.logo img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Navigation Links mit Dropdown */
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #f2f2f2;
+    text-decoration: underline;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    position: relative;
+    margin-right: 20px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    position: relative;
+    margin-right: 20px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    display: none;
+    list-style-type: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-links li:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    margin-bottom: 5px;
+}
+
+.dropdown-menu a {
+    color: white;
+    font-size: 1rem;
+    padding-top: 1rem;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Suchleiste */
+.search {
+    display: flex;
+    padding: 0 2rem;
+    font-size: 1rem;
+    height: 2.5rem;
+}
+
+.search input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+.search button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.search button:hover {
+    background-color: #f2f2f2;
+}
+
+.icon-container i {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin: 0 8px;
+    padding-top: 8px;
+}
+
+.werbung {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: yellow;
+    margin-bottom: 2rem;
+}
+
+.werbung h2 {
+    margin-right: 50px;
+}
+
+.werbung button {
+    height: 50%;
+    color: white;
+    background-color: #000;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 2rem;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    /* border: 3px solid black; */
+}
+
+.box {
+    flex-basis: calc(25% - 20px);
+    margin-bottom: 20px;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #333;
+}
+
+.product-details {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.product-details h4 {
+    font-size: 3rem;
+}
+
+.product-details p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+.product-details i {
+    color: black;
+    margin-right: 1rem;
+}
+
+#detail123 {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.product-container button {
+    background-color: black;
+    height: 4rem;
+    width: 70%;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.product-container button a,
+.product-container button i {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.checkout-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkout-button button {
+    width: 100%;
+    height: 2rem;
+    font-size: 1.4rem;
+}
+.checkout-button {
+    /* display: inline-block; */
+    padding: 8px 16px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.checkout-button a {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.ratings {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.ratings p {
+    color: black;
+    margin-bottom: -4px;
+}
+
+.checkout-button:hover {
+    background-color: #0056b3;
+}
+
+
+.checkout-button i {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    color: white;
+}
+
+.ratings {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.ratings i {
+    color: gold;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.related-products {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.related-products .box {
+    width: 22%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.size-selector {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.size-selector label {
+    margin-right: 1rem;
+}
+
+.box image {
+    width: 100%;
+    height: auto;
+}
+
+.related-products .box h4 {
+    font-size: 1.2rem;
+}
+
+.related-products .box p {
+    font-size: 1rem;
+}
+
+footer {
+    margin-top: 2rem;
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    }
+    .search {
+        display: none;
+    }
+}

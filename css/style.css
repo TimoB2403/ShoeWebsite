@@ -8,7 +8,12 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    background-color: white;
 }
+h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
 
 /* header + Navigation */
 
@@ -32,6 +37,12 @@ nav {
     font-size: 24px;
     font-weight: bold;
     padding: 0 2rem;
+    height: 100px;
+}
+
+.logo img {
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Navigation Links mit Dropdown */
@@ -81,7 +92,7 @@ nav {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: black;
+    background-color: #333;
     display: none;
     list-style-type: none;
     padding: 10px;
@@ -107,12 +118,12 @@ nav {
     text-decoration: underline;
 }
 
-
 /* Suchleiste */
-
 .search {
     display: flex;
     padding: 0 2rem;
+    font-size: 1rem;
+    height: 2.5rem;
 }
 
 .search input {
@@ -129,10 +140,64 @@ nav {
     border-radius: 20px;
     margin-left: 10px;
     cursor: pointer;
+    margin-right: 20px;
 }
 
 .search button:hover {
     background-color: #f2f2f2;
+}
+
+.icon-container i {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin: 0 8px;
+    padding-top: 8px;
+}
+
+/* .icon-container i:hover {
+    border: 2px solid white;
+} */
+
+.description {
+    width: 100%;
+    height: 300px;
+    padding: 20px 0;
+    margin: auto;
+    text-align: center;
+    background-color: #F5F5E5;
+}
+
+.description h2 {
+    margin-top: 50px;
+}
+
+.description p {
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-left: 500px;
+    padding-right: 500px;
+}
+
+.werbung {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: yellow;
+}
+
+.werbung h2 {
+    margin-right: 50px;
+}
+
+.werbung button {
+    height: 50%;
+    color: white;
+    background-color: #000;
 }
 
 /* main container */
@@ -143,12 +208,13 @@ nav {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 100px;
 }
 
 .box {
     flex: 1 0 calc(33.33% - 20px);
     margin: 10px;
-    text-align: center;
+    text-align: left;
     overflow: hidden;
     position: relative;
     transition: transform 0.3s ease;
@@ -158,13 +224,125 @@ nav {
     width: 100%;
     height: auto;
     border: 2px solid black;
+}
 
+.box h4 {
+    font-size: 1.2rem;
 }
 
 .box p {
-    margin-top: 5px;
+    /* bottom: 10px; */
+    font-size: 1.1rem;
+    margin-top: -10px;
 }
 
 .box:hover img {
-    transform: scale(1.2);
+    transform: scale(1.25);
+    /* border: 2px solid #000; */
+}
+
+/* Carousel Slider */
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+    text-shadow: -1px -1px 0 #000,  
+                  1px -1px 0 #000,
+                 -1px  1px 0 #000,
+                  1px  1px 0 #000;
+}
+
+.carousel-item h5 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.carousel-item p {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    text-align: left;
+    padding: 10px;
+}
+
+.carousel-caption .btn {
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+/* Media Query für größere Bildschirme */
+@media screen and (min-width: 1024px) {
+    body {
+      font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    }
+    h1 {
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    }
+    .search {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1620px) {
+    .description {
+        display: none;
+    }
 }

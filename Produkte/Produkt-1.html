@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/Produkt-1.css">
+    <link rel="stylesheet" href="../Produkt.js">
+    <title>Product Page</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Header - Linke Seite -->
+        <nav>
+            <div class="logo"><img src="../images/adidas-logo-n.jpg" alt="logo"></div>
+            <!-- Header - Mitte -->
+            <ul class="nav-links">
+                <li><a href="#">Männer</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#row1">Sneaker</a></li>
+                    <li><a href="#row2">Laufschuhe</a></li>
+                    <li><a href="#row3">Fußballschuhe</a></li>
+                    <li><a href="#">Sonstiges</a></li>
+                </ul>
+            </li>
+                <li><a href="#">Frauen</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#row1">Sneaker</a></li>
+                    <li><a href="#row2">Laufschuhe</a></li>
+                    <li><a href="#row3">Fußballschuhe</a></li>
+                    <li><a href="#">Sonstiges</a></li>
+                </ul>
+            </li>
+                <li><a href="#">Kinder</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#row1">Sneaker</a></li>
+                    <li><a href="#row2">Laufschuhe</a></li>
+                    <li><a href="#row3">Fußballschuhe</a></li>
+                    <li><a href="#">Sonstiges</a></li>
+                </ul>
+            </li>
+                <li><a href="#">Neu</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Sommercollection</a></li>
+                    <li><a href="#">Wintercollection</a></li>
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="#">Sonstiges</a></li>
+                </ul>
+            </li>
+            </ul>
+            <!-- Header - Rechte Seite -->
+            <div class="search">
+                <input type="text" placeholder="Suchen">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                <div class="icon-container">
+                    <a href="#"><i class="fa-regular fa-user"></i></a>
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Werbung -->
+    <div class="werbung">
+        <h2>WERDE MITGLIED & SICHER DIR 10% RABATT*</h2>
+        <button>KOSTENLOS ANMELDEN <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+    <!-- Main Container mit Produkt -->
+    <div class="container product-container">
+        <div class="product-image">
+            <img src="../images/Sneaker2.png" alt="Product Image" class="img-fluid">
+        </div>
+        <div class="product-details">
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <p>4.7 (1337 Bewertungen)</p>
+            </div>
+            <h4>R1 PRIMEBLUE SCHUH</h4>
+            <p id="detail123">Core Black - 60€</p>
+            <div class="size-selector">
+                <label for="shoe-size">Größen:</label>
+                <select id="shoe-size">
+                    <option value="35">35</option>
+                    <option value="36">36</option>
+                    <option value="37">37</option>
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                    <option value="43">43</option>
+                    <option value="44">44</option>
+                    <option value="45">45</option> 
+                    <option value="46">46</option>
+                </select>
+            <button><a href="Payment.html">In den Warenkorb <i class="fa-solid fa-cart-shopping"></i></a></button>
+            <p><i class="fa-solid fa-truck"></i>Kostenloser Versand für Club Mitglieder</p>
+            <p><i class="fa-solid fa-hand-holding-dollar"></i>Rückgabe & Umtausch 30 Tage kostenlos</p>
+            <p><i class="fa-solid fa-location-dot"></i>Kostenloser Expressversand in einen Store</p>
+        </div>
+    </div>
+
+    <!-- Unterer Container mit Empfohlene Produkte -->
+    <div class="container">
+        <h3>DAS KÖNNTE DIR AUCH GEFALLEN</h3>
+        <div class="related-products">
+            <div class="box">
+                <a href="../index.html">
+                <img src="../images/Sneaker3.png" alt="Related Product 1" class="img-fluid">
+            </a>
+                <h4>R! PRIMEBLUE SCHUH</h4>
+                <p>Cloud White - 60€</p>
+            </div>
+            <div class="box">
+                <a href="../index.html">
+                <img src="../images/Laufschuhe11.png" alt="Related Product 2" class="img-fluid">
+            </a>
+                <h4>Runfalcon 2.0 Laufschuhe</h4>
+                <p>Green Spark - 55€</p>
+            </div>
+            <div class="box">
+                <a href="../index.html">
+                <img src="../images/Fußballschuhe1.png" alt="Related Product 3" class="img-fluid">
+            </a>
+                <h4>X Crazyfast.1 FG Fußballschuhe</h4>
+                <p>Core Black - 90€</p>
+            </div>
+            <div class="box">
+                <a href="../index.html">
+                <img src="../images/Sneaker1.png" alt="Related Product 4" class="img-fluid">
+            </a>
+                <h4>R1 PRIMEBLUE SCHUH</h4>
+                <p>Core Black - 60€</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">Impressum</a>
+            <a href="#">AGB</a>
+            <a href="#">Datenschutz</a>
+            <a href="#">Kontakt</a>
+        </div>
+        
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        
+        <div class="footer-bottom">
+            &copy; 2024 Your Company Name. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha384-xgX4C8KtIvI2Bk4OnH4S+LHeB/RBXmhXpK6PPUyV1nVXE5Vk2jXERyuE0MSuUt/i" crossorigin="anonymous"></script>
+</body>
+</html>
